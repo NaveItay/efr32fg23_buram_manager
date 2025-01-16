@@ -110,3 +110,16 @@ int main(void)
 }
 
 ```
+---
+
+## Notes on BURAM
+
+- **Memory Size**: BURAM consists of 32 registers (RET[0] to RET[31]), each 32 bits (4 bytes), totaling 128 bytes.
+- **Offset Ranges**: Each register supports byte-level access with offsets 0, 1, 2, and 3 for 8-bit data, and offsets 0 or 2 for 16-bit data.
+- **Persistence in Low-Power Modes**: Data in BURAM persists even during deep sleep (EM4), making it suitable for storing critical information that must survive low-power states.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
